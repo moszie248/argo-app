@@ -9,6 +9,8 @@ spec:
     repoURL: git@github.com:moszie248/argocd-app.git
     targetRevision: main
     path: dev
+    directory:
+      recurse: true
   destination:
     server: https://kubernetes.default.svc
     namespace: default
